@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App forcast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand text-success" href="#" >
+                Wheather Forcast
+              </a>
+            </div>
+        </nav>
+        <div class="row mt-5">
+            <div class="col-md-4 p-2  shadow">
+                <label for="">Enter City Name<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="" id="city" placeholder="akola ,amravati">
+                <button class="btn btn-primary mt-4" onclick="searchCity()">check Wheather</button>
+                <button class="btn btn-secondary mt-3" onclick="getUserloc()">Wheather of Current Location</button>
+            </div>
+            <div class="col-md-8 p-2 shadow ">
+                <div class="alert alert-success mt-3 pb-0" role="alert">
+                
+                    <div id="todysForecast">
+                    </div>
+                </div>
+                <div class="alert alert-light mt-1" role="alert">
+                    <div class="alert alert-primary" role="alert">
+                        <label for="" class="text-success">Weather forcast  Predictions</label>
+                    </div>
+                    <div id="todysForecast1" class="row p-2 m-2">
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+    <script src="./apikey.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
