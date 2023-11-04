@@ -123,4 +123,4 @@ const getUserloc = async() =>{
     const locationService = new wheather()
     await locationService.getUserCoordinates()
 }
-//hgfd
+//ad
